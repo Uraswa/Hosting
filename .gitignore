@@ -1,0 +1,6 @@
+hostring_frontend/.next
+hostring_frontend/node_modules
+hostring_frontend/package-lock.json
+hosting_backend/venv
+hosting_backend/.idea
+.idea
