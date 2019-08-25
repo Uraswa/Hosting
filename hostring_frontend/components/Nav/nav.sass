@@ -11,8 +11,9 @@
       margin-right: 75px
   .navigation
     list-style: none
-    font-weight: 400
-    font-family: 'Open Sans', sans-serif
+    font:
+      weight: 400
+      family: $opensans
     padding: 41px 0
     display: flex
     align-items: center
@@ -25,9 +26,8 @@
     li
       cursor: pointer
     li.active
-      color: $accent
-      font-weight: 700
+      @extend %active
     .support-btn
       color: #5f2073
-      font-family: "Open Sans", sans-serif
+      font-family: $opensans
       font-weight: 600

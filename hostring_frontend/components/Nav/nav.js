@@ -7,34 +7,25 @@ import Button from "react-bootstrap/Button";
 import { useRouter } from 'next/router'
 
 
+export class link{
+    constructor(href,text,content){
+        this.href = href;
+        this.text = text;
+        this.content = content;
+    }
+}
+
+export const links = [
+        new link('/','Home'),
+        new link('/services','Plans and Services'),
+        new link('/infrastructure','Infrastructure'),
+        new link('/news','News'),
+        new link('/about','About'),
+        new link('/support',<Button variant="light" className="support-btn">Support</Button>)
+];
+
 const Header = () => {
     const {pathname} = useRouter();
-    const links = [
-        {
-            href:'/',
-            text:'Home'
-        },
-        {
-            href:'/services',
-            text:'Plans and Services'
-        },
-        {
-            href:'/infrastructure',
-            text:'Infrastructure'
-        },
-        {
-            href:'/news',
-            text:'News'
-        },
-        {
-            href:'/about',
-            text:'About'
-        },
-        {
-            href:'/support',
-            content: <Button variant="light" className="support-btn">Support</Button>
-        },
-    ];
     return (
         <Navbar expand="lg" className="container main-nav">
                <Link href="/">
@@ -50,7 +41,7 @@ const Header = () => {
                                 <Link key={v.href} href={v.href}>
                                     <li className={pathname === v.href ? 'active' : ''}>
                                         <a >
-                                            {v.text || v.content}
+                                            {v.text}
                                         </a>
                                     </li>
                                 </Link>
