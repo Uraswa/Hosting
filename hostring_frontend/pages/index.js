@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import Nav from '../components/Nav/nav'
+import  StockCarousel from '../components/StockCarousel/StockCarousel'
 
 
 const Home = () => (
@@ -9,6 +9,10 @@ const Home = () => (
     <Head>
       <title>Home</title>
     </Head>
+      <div>
+        <StockCarousel/>
+      </div>
+      <div ></div>
   </main>
 )
 

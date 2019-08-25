@@ -1,0 +1,83 @@
+@import '../../static/vars'
+#stock-carousel
+  height: 563px
+  max-height: 563px
+  background: radial-gradient(#733c88, $second)
+  position: relative
+  margin-bottom: 80px
+
+  @media (max-width: 992px)
+    height: auto
+    max-height: none
+    margin-bottom: 0
+
+    #server-img
+      display: none !important
+
+  #server-img
+    position: absolute
+    bottom: -80px
+    left: 0
+    width: 100%
+    z-index: 0
+
+    @media (max-width: 1342px)
+
+        img
+          width: 100%
+
+    @media (max-width: 986px)
+      bottom: -30px
+
+    @media (max-width: 608px)
+      bottom: 0
+  .carousel-slide
+    padding-top: 65px
+    padding-bottom: 200px
+    @media (max-width: 576px)
+      padding-bottom: 50px
+    .carousel-info
+      color: #ffffff
+      font-family: $opensans
+      h1
+        font-weight: 700
+        font-size: 60px
+
+      h3
+        font-weight: 300
+        font-size: 48px
+      p
+        background-image: linear-gradient(to top, #653378 0%, #703783 100%)
+        background-clip: text
+        opacity: 0.34
+        color: #ffffff
+        font-family: "Open Sans"
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+
+    .carousel-contacts
+      padding-top: 25px
+
+      .contact-action
+        color: #ffffff
+        font-family: "Open Sans"
+        font-size: 18px
+        font-weight: 400
+
+      .contact-credential
+        color: white
+        font-family: "Open Sans"
+        font-weight: 700
+
+
+
+  #test
+    height: 80px
+
+    width: 100%
+    background: white
+    position: relative
+
+
+
