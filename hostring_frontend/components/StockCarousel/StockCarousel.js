@@ -3,6 +3,7 @@ import './stockcarousel.sass'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import AccentBtn from "../AccentBtn/AccentBtn";
+import Notification from "../Notification/Notification";
 
 
 export default function StockCarousel() {
@@ -42,11 +43,9 @@ export default function StockCarousel() {
 
             </div>
             </div>
-            <div id='test'>
-                <div id='test2'>
-                    3123
-                </div>
-            </div>
+            <Notification>
+
+            </Notification>
 
         </section>
     );

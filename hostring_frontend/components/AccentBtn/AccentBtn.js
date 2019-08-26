@@ -4,7 +4,7 @@ import './accentbtn.sass'
 
 
 export default (props) => (
-    <Link>
+    <Link href=''>
         <button className="accent-btn">
             {props.text}
         </button>

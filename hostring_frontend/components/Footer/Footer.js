@@ -33,7 +33,7 @@ export default () => {
                         {links.map((v,i)=> {
 
                             return (
-                                <Col key={i} sm={6} md={4} lg={2}>
+                                <Col key={'col'+i} sm={6} md={4} lg={2}>
                                     <ul>
                                         {[v,...texts[i]].map((value,index)=> {
                                             if (value.text) {
@@ -47,7 +47,7 @@ export default () => {
                                                 )
                                             }
                                             return (
-                                                <li>
+                                                <li key={index}>
                                                     {value.content}
                                                 </li>
                                             )
