@@ -48,7 +48,7 @@ export default () => {
                 <Row>
                    {services.map((v,i)=> {
                         return (
-                            <Col className="mb-2" sm={6} xl={3}>
+                            <Col key={'service'+i} className="mb-2" sm={6} xl={3}>
                                 <Service {...v}/>
                             </Col>
                         )
