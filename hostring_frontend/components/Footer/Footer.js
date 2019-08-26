@@ -20,7 +20,7 @@ const texts = [
     ],
     [
         new link('','',<a className="footer-contact" href='tel:+7800553535'>Call us: 8800553535</a>),
-        new link('','',<a className="footer-contact" href='mailto://zanin.vowa2015@yandex.ru'>Email us: zanin.vowa2015@yandex.ru</a>)
+        new link('','',<a className="footer-contact" href='mailto://zanin.vowa2015@yandex.ru'>Email us<span id="email-hide">: zanin.vowa2015@yandex.ru</span></a>)
     ]
 ];
 
@@ -60,8 +60,8 @@ export default () => {
                 </Container>
             </section>
             <section id="footer-owned" className="container d-sm-flex justify-content-between px-3 px-sm-0">
-                <p>Design: <a href="https://we.do/" target="_blank"><strong>we.do</strong></a></p>
-                <p>Copyright © <strong>2014 Digital landscape</strong></p>
+                <p className="mb-0">Design: <a href="https://we.do/" target="_blank"><strong>we.do</strong></a></p>
+                <p className="mb-0">Copyright © <strong>2014 Digital landscape</strong></p>
             </section>
         </Fragment>
     )
