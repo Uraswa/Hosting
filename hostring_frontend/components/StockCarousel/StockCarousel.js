@@ -43,9 +43,9 @@ export default function StockCarousel() {
 
             </div>
             </div>
-            <Notification>
+            <Notification/>
 
-            </Notification>
+
 
         </section>
     );

@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import  StockCarousel from '../components/StockCarousel/StockCarousel'
+import ServicesList from "../components/ServicesList/ServicesList";
 
 
 const Home = () => (
@@ -9,11 +10,9 @@ const Home = () => (
     <Head>
       <title>Home</title>
     </Head>
-      <div>
-        <StockCarousel/>
-      </div>
-      <div ></div>
+      <StockCarousel/>
+      <ServicesList/>
   </main>
-)
+);
 
 export default Home
